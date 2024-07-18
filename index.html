@@ -3,11 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>토이 프로젝트</title>
+    <title>가위 바위 보 GAME</title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <h1>주제</h1>
+    <h1>가위 바위 보 GAME</h1>
+    <div class="image_area">
+      <img id="img" src="" />
+    </div>
+    <div class="score">
+      <div class="user">
+        <div class="user_text">사용자 점수 :&nbsp;</div>
+        <div class="user_score" id="user_score">0</div>
+      </div>
+      <div class="computer">
+        <div class="computer_text">컴퓨터 점수 :&nbsp;</div>
+        <div class="computer_score" id="computer_score">0</div>
+      </div>
+    </div>
+    <div class="button_area">
+      <input type="button" id="scissors" value="가위" />
+      <input type="button" id="rock" value="바위" />
+      <input type="button" id="paper" value="보" />
+    </div>
+    <div class="reset">
+      <input type="button" id="reset_btn" value="다시하기" />
+      <input type="button" id="end_btn" value="종료하기" />
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
